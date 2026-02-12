@@ -29,3 +29,13 @@ function concatenateArrays<T>(...arrays: T[][]): T[] {
 console.log(concatenateArrays(["a", "b"], ["c"]));
 
 console.log(concatenateArrays([1, 2], [3, 4], [5]));
+
+// class Vehicle{
+//     constructor
+// }
+
+function processValue(value: string | number): number {
+  return typeof value === "string" ? value.length : value * 2;
+}
+console.log(processValue("hello"));
+console.log(processValue(10));
